@@ -10,25 +10,49 @@
     </style>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
+    <h3>all the parks in Australia that they are burning</h3>
     <!--The div element for the map -->
     <div id="map"></div>
     <script>
 // Initialize and add the map
 function initMap() {
   // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
+    var uluru = {lat: -25.344, lng: 131.036};
+    var muluru = {lat: -13.349561, lng: 132.462420};
+    var suluru = {lat: -11.415530, lng: 132.561163};
+    var tuluru = {lat: -15.548336, lng: 135.176777};
+    var zuluru = {lat: -16.665356, lng: 142.801556};
+    var auluru = {lat: -33.041746, lng: 150.467974};
+    var buluru = {lat: -34.090410, lng: 150.075269};
+    var quluru = {lat: -36.518930, lng: 148.031397};
+    var wuluru = {lat: -35.748349, lng: 140.602762};
+    var duluru = {lat: -30.953626, lng: 133.261155};
+    var ouluru = {lat: -29.659470, lng: 128.289732};
+    var puluru = {lat: -24.842755, lng: 125.286906};
+    var huluru = {lat: -22.675579, lng: 122.43606};
   // The map, centered at Uluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: uluru});
+   
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
+  var marker = new google.maps.Marker({position: muluru, map: map});
+  var marker = new google.maps.Marker({position: suluru, map: map});
+  var marker = new google.maps.Marker({position: tuluru, map: map});
+  var marker = new google.maps.Marker({position: zuluru, map: map});
+  var marker = new google.maps.Marker({position: auluru, map: map});
+  var marker = new google.maps.Marker({position: buluru, map: map});
+  var marker = new google.maps.Marker({position: quluru, map: map});
+  var marker = new google.maps.Marker({position: wuluru, map: map});
+  var marker = new google.maps.Marker({position: duluru, map: map});
+  var marker = new google.maps.Marker({position: ouluru, map: map});
+  var marker = new google.maps.Marker({position: puluru, map: map});
+  var marker = new google.maps.Marker({position: huluru, map: map});
 }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFg1yBReWbkbcUieiDCePsUiMoYaPYTM0&callback=initMap">
     </script>
-    https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=via%20xxv%20aprile&inputtype=textquery&fields=name&key=AIzaSyDFg1yBReWbkbcUieiDCePsUiMoYaPYTM0&callback=initMap
-  </body>
+    </body>
 </html>
 
